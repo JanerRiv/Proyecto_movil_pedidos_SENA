@@ -53,11 +53,9 @@ export default function App() {
                 <Text style={[estilos.td, estilos.cellHora]}>{item.hora}</Text>
               </View>
             ))}
-            
+
           </ScrollView>
         </View>
-
-        
 
       </View>
     </View>
@@ -97,6 +95,14 @@ tableContainer: {
     borderWidth: 1,
     borderColor: "#e0e0e0",
     overflow: "hidden",
-  }
+  },
+
+tr: {
+    backgroundColor: "#ffffff",
+
+  },
+trEven: {
+    backgroundColor: "#fafafa",
+  },
 
 })
