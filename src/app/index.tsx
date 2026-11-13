@@ -123,6 +123,14 @@ cellNumero: {
   cellHora: {
     flex: 1.5,
   },
+tableHeader: {
+    flexDirection: "row",
+    backgroundColor: "#f8f9fa",
+    borderBottomWidth: 1,
+    borderBottomColor: "#e0e0e0",
+  },
+tableBody: {
+    maxHeight: 170,
+  },
 
-
-})
+});
