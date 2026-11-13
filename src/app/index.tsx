@@ -39,6 +39,22 @@ export default function App() {
             <Text style={[estilos.th, estilos.cellNumero]}>Nº Clic</Text>
             <Text style={[estilos.th, estilos.cellHora]}>Hora</Text>
           </View>
+
+           {/* Cuerpo de la tabla con scroll */}
+          <ScrollView style={estilos.tableBody}>
+            {registros.map((item, index) => (
+              <View
+                key={item.id}
+                style={[estilos.tr, index % 2 === 0 ? estilos.trEven : null]}
+              >
+                <Text style={[estilos.td, estilos.cellNumero]}>
+                  {item.numero}
+                </Text>
+                <Text style={[estilos.td, estilos.cellHora]}>{item.hora}</Text>
+              </View>
+            ))}
+            
+          </ScrollView>
         </View>
 
         
