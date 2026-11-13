@@ -117,5 +117,12 @@ td: {
     padding: 10,
     textAlign: "center",
   },
+cellNumero: {
+    flex: 1,
+  },
+  cellHora: {
+    flex: 1.5,
+  },
+
 
 })
