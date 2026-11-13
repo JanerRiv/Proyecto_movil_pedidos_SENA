@@ -32,6 +32,14 @@ export default function App() {
           <Text style={estilos.btnText}>¡Haz Clic Aquí!</Text>
         </TouchableOpacity>
         
+        {/* Tabla de registros */}
+        <View style={estilos.tableContainer}>
+          {/* Cabecera de la tabla */}
+          <View style={estilos.tableHeader}>
+            <Text style={[estilos.th, estilos.cellNumero]}>Nº Clic</Text>
+            <Text style={[estilos.th, estilos.cellHora]}>Hora</Text>
+          </View>
+        </View>
 
         
 
@@ -42,29 +50,37 @@ export default function App() {
 
 const estilos = StyleSheet.create({
 
-  body: {
+body: {
     flex: 1,
     backgroundColor: "#f4f7f6",
   },
-    counterBox: {
-    fontSize: 48,
+counterBox: {
+  fontSize: 48,
     fontWeight: "bold",
     color: "#333",
     textAlign: "center",
     marginTop: 60,
     marginBottom: 20,
   },
-  btnClick: {
+btnClick: {
     backgroundColor: "#3498db",
     padding: 15,
     borderRadius: 8,
     alignItems: "center",
     marginHorizontal: 20,
   },
-  btnText: {
+btnText: {
     color: "#ffffff",
     fontSize: 16,
     fontWeight: "600",
   },
+tableContainer: {
+    margin: 20,
+    backgroundColor: "#ffffff",
+    borderRadius: 8,
+    borderWidth: 1,
+    borderColor: "#e0e0e0",
+    overflow: "hidden",
+  }
 
 })
