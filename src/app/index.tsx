@@ -104,5 +104,18 @@ tr: {
 trEven: {
     backgroundColor: "#fafafa",
   },
+th: {
+    color: "#7f8c8d",
+    fontWeight: "600",
+    fontSize: 14,
+    padding: 10,
+    textAlign: "center",
+  },
+td: {
+    color: "#333",
+    fontSize: 14,
+    padding: 10,
+    textAlign: "center",
+  },
 
 })
