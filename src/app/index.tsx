@@ -99,6 +99,9 @@ tableContainer: {
 
 tr: {
     backgroundColor: "#ffffff",
+    flexDirection: "row",
+    borderBottomWidth: 1,
+    borderBottomColor: "#e0e0e0",
 
   },
 trEven: {
